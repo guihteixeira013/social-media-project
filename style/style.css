@@ -28,7 +28,7 @@ main {
     height: 100vh;
 }
 
-section#phone {
+#phone {
     position: absolute;
     top: 50%;    
     left: 50%;
@@ -38,7 +38,7 @@ section#phone {
     width: 305px;
 }
 
-section#socials > a > img {
+#socials > a > img {
     box-shadow: 1px 1px 5px 0px #0000008f;
     width: 50px;
     border-radius: 50%;
@@ -46,14 +46,14 @@ section#socials > a > img {
     box-sizing: border-box;
 }
 
-section#socials > a > img:hover {
+#socials > a > img:hover {
     box-shadow: 2px 2px 10px 0px #0000008f;
     transform: translate(-3px, -3px);
     border: 1px solid rgba(255, 255, 255, 0.74);
-    transition: border .1s,box-shadow .3s, transform .3s;
+    transition: border .1s, box-shadow .3s, transform .3s;
 }
 
-iframe#screen { 
+#screen { 
     position: relative;
     top: 76px;
     left: 19px;
