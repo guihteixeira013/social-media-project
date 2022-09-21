@@ -38,8 +38,19 @@ section#phone {
     width: 305px;
 }
 
-section#socials {
-    /*Im waiting to see next lesson to continue*/
+section#socials > a > img {
+    box-shadow: 1px 1px 5px 0px #0000008f;
+    width: 50px;
+    border-radius: 50%;
+    margin: 10px;
+    box-sizing: border-box;
+}
+
+section#socials > a > img:hover {
+    box-shadow: 2px 2px 10px 0px #0000008f;
+    transform: translate(-3px, -3px);
+    border: 1px solid rgba(255, 255, 255, 0.74);
+    transition: border .1s,box-shadow .3s, transform .3s;
 }
 
 iframe#screen { 
@@ -48,26 +59,4 @@ iframe#screen {
     left: 19px;
     height: 473px;  /*home-screen.png size*/
     width: 270px;   /*home-screen.png size*/
-}
-
-ul.nav {
-    margin-top: 25px;
-    margin-right: 10px;
-    position: absolute;
-    right: 0px;
-}
-
-li {
-    list-style-type: none;
-    border-radius: 100%;
-    margin-bottom: 25px;
-    height: 48px;
-    width: 48px;
-    transition-duration: 0.5s;
-    opacity: 60%;
-}
-
-li:hover {
-    box-shadow: 2px 2px 10px 1px #0000005c;
-    opacity: 100%;
 }
