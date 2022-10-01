@@ -1,62 +1,123 @@
 @charset "UTF-8";
 
-:root { /*Background color palette*/
-    --cor-0 : #4FD3B4;
-    --cor-1 : #F28B66;
-    --cor-2 : #3D1773;
-    --cor-3 : #456C90;
-    --cor-4 : #B10E1E;
+@media all {
+    :root { /*Background color palette*/
+        --cor-0 : #4FD3B4;
+        --cor-1 : #F28B66;
+        --cor-2 : #3D1773;
+        --cor-3 : #456C90;
+        --cor-4 : #B10E1E;
+    }
+
+    * {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    html, body {
+        background-color: var(--cor-0);
+        height: 100vh;
+        width: 100vw;
+    }
+
+    body {
+        background: url('../images/efe-kurnaz.jpg') center center no-repeat fixed;
+        background-size: cover;
+    }
+
+    main {
+        height: 100vh;
+    }
+
+    #phone {
+        position: absolute;
+        top: 50%;    
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-image: url('../images/iphone-portrait.png');
+        height: 621px;
+        width: 305px;
+    }
+
+    #socials > a > img {
+        box-shadow: 1px 1px 5px 0px #0000008f;
+        width: 50px;
+        border-radius: 50%;
+        margin: 10px;
+        box-sizing: border-box;
+    }
+
+    #socials > a > img:hover {
+        box-shadow: 2px 2px 10px 0px #0000008f;
+        transform: translate(-3px, -3px);
+        border: 1px solid rgba(255, 255, 255, 0.74);
+        transition: border .1s, box-shadow .3s, transform .3s;
+    }
+
+    #screen { 
+        position: relative;
+        top: 76px;
+        left: 19px;
+        height: 473px;  /*home-screen.png size*/
+        width: 267px;   /*home-screen.png size*/
+    }
+
+    #socialstop, #socialsbottom {
+        display: none;
+    }
 }
 
-* {
-    margin: 0px;
-    padding: 0px;
-}
+@media screen and (max-width: 450px) {
+    #socials {
+        display: none;
+    }
 
-html, body {
-    background-color: var(--cor-0);
-    height: 100vh;
-    width: 100vw;
-}
+    #socialstop {
+        display: block;
+        margin-top: 10px;
+        position: absolute;
+        left: 25%;
+    }
 
-body {
-    background: url('../images/efe-kurnaz.jpg') center center no-repeat fixed;
-    background-size: cover;
-}
+    #socialstop > a {
+        margin-right: 10px;
+    }
 
-main {
-    height: 100vh;
-}
+    #socialstop > a > img {
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+    }
 
-#phone {
-    position: absolute;
-    top: 50%;    
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-image: url('../images/iphone-portrait.png');
-    height: 621px;
-    width: 305px;
-}
+    #socialstop > a > img:hover {
+        box-shadow: 2px 2px 10px 0px #0000008f;
+        transform: translate(-3px, -3px);
+        border: 1px solid rgba(255, 255, 255, 0.74);
+        transition: border .1s, box-shadow .3s, transform .3s;
+    }
 
-#socials > a > img {
-    box-shadow: 1px 1px 5px 0px #0000008f;
-    width: 50px;
-    border-radius: 50%;
-    margin: 10px;
-    box-sizing: border-box;
-}
+    #socialsbottom {
+        display: block;
+        position: absolute;
+        bottom: 0px;
+        left: 25%;
+    }
 
-#socials > a > img:hover {
-    box-shadow: 2px 2px 10px 0px #0000008f;
-    transform: translate(-3px, -3px);
-    border: 1px solid rgba(255, 255, 255, 0.74);
-    transition: border .1s, box-shadow .3s, transform .3s;
-}
+    #socialsbottom > a {
+        margin-left: 10px;
+    }
 
-#screen { 
-    position: relative;
-    top: 76px;
-    left: 19px;
-    height: 473px;  /*home-screen.png size*/
-    width: 267px;   /*home-screen.png size*/
+    #socialsbottom > a > img:hover {
+        box-shadow: 2px 2px 10px 0px #0000008f;
+        transform: translate(-3px, -3px);
+        border: 1px solid rgba(255, 255, 255, 0.74);
+        transition: border .1s, box-shadow .3s, tranform .3s;
+    }
+
+    #socialsbottom > a > img {
+        border-radius: 50%;
+        margin-bottom: 10px;
+        width: 50px;
+        height: 50px;
+    }
 }
